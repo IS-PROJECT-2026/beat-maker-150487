@@ -2,7 +2,7 @@
 import { audioCtx, unlockAudio } from './audio/context.js';
 
 let isPlaying = false;
-const defaultBpm = 120; 
+const defaultBpm = 140; 
 
 document.addEventListener('DOMContentLoaded', () => {
     const playBtn = document.getElementById('play-btn');
