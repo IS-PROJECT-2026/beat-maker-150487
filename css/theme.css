@@ -1,0 +1,28 @@
+/* css/theme.css */
+:root {
+    /* Warm Cyberpunk Palette */
+    --bg-base: #0a0a0c;
+    --panel-bg: #16161a;
+    --neon-orange: #ff5e00;
+    --neon-amber: #ffaa00;
+    --text-main: #f0f0f0;
+    --text-muted: #888890;
+    
+    /* Grid & Knobs */
+    --pad-inactive: #2a2a30;
+    --pad-active: var(--neon-orange);
+    --knob-accent: var(--neon-amber);
+}
+
+body {
+    background-color: var(--bg-base);
+    color: var(--text-main);
+    font-family: 'Courier New', Courier, monospace; /* Tech feel */
+}
+
+/* Example class for the FX knobs */
+.fx-knob {
+    border: 2px solid var(--neon-amber);
+    box-shadow: 0 0 10px rgba(255, 170, 0, 0.5);
+    background-color: var(--panel-bg);
+}
