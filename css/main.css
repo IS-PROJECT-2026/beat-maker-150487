@@ -1,0 +1,44 @@
+:root {
+    --bg-base: #0a0a0c;
+    --panel-bg: #16161a;
+    --neon-orange: #ff5e00;
+    --neon-amber: #ffaa00;
+    --text-main: #f0f0f0;
+}
+
+body {
+    background-color: var(--bg-base);
+    color: var(--text-main);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+}
+
+header, #fx-panel {
+    background-color: var(--panel-bg);
+    padding: 20px;
+    border: 1px solid var(--neon-orange);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(255, 94, 0, 0.2);
+}
+
+button {
+    background-color: transparent;
+    color: var(--neon-amber);
+    border: 1px solid var(--neon-amber);
+    padding: 10px 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--neon-amber);
+    color: var(--bg-base);
+    box-shadow: 0 0 15px var(--neon-amber);
+}
+
+input[type=range] {
+    accent-color: var(--neon-orange);
+}
