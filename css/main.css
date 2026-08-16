@@ -42,3 +42,67 @@ button:hover {
 input[type=range] {
     accent-color: var(--neon-orange);
 }
+
+
+/* Sequencer Grid Layout */
+#sequencer-grid {
+    background-color: var(--panel-bg);
+    padding: 15px;
+    border: 1px solid var(--neon-orange);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.track-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.track-label {
+    width: 80px;
+    font-weight: bold;
+    color: var(--neon-amber);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.steps-container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    gap: 6px;
+    flex-grow: 1;
+}
+
+.pad {
+    aspect-ratio: 1 / 1;
+    background-color: #242429;
+    border: 1px solid #3a3a44;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.1s, transform 0.05s;
+}
+
+.pad.beat-marker {
+    border-color: #555566;
+}
+
+.pad:hover {
+    border-color: var(--neon-amber);
+}
+
+.pad.active {
+    background-color: var(--neon-orange);
+    box-shadow: 0 0 8px var(--neon-orange);
+    border-color: #ffffff;
+}
+
+.pad.playing {
+    transform: scale(1.1);
+    outline: 2px solid #ffffff;
+}
+
+.pad.active.playing {
+    background-color: #ffffff;
+    box-shadow: 0 0 12px #ffffff;
+}
