@@ -14,7 +14,7 @@
 
 ---
 
-## 3. Reflection — Grounded in Your Git History
+## 3. Reflection: Grounded in Your Git History
 
 ### A. Your Best Commit
 
@@ -33,7 +33,7 @@
 
 ### D. One Thing You Would Do Differently
 
-- **What would you change?** I would stage changes more deliberately to maintain atomic commits. In commit `1fc3f38`, I changed 15 files at once—mixing styling refactors, whitespace adjustments, and Web Audio synthesis code into one commit instead of splitting them by scope.
+- **What would you change?** I would stage changes more deliberately to maintain atomic commits. In commit `1fc3f38`, I changed 15 files at once, mixing styling refactors, whitespace adjustments, and Web Audio synthesis code into one commit instead of splitting them by scope.
 - **Link to the evidence of the original decision:** https://github.com/IS-PROJECT-2026/beat-maker-150487/commit/1fc3f38f81aaa931d73c86c8b9029de8ccf98e11
 
 ---
@@ -62,7 +62,7 @@
 
 ## 5. Merge Conflict Evidence
 
-### Conflict 1 — Full Chronology
+### Conflict 1: Full Chronology
 
 **What cause did you use?** Content Overlap (Simultaneous Line Modification)
 
@@ -83,7 +83,7 @@
 
 ---
 
-### Conflict 2 — Different Cause
+### Conflict 2: Different Cause
 
 **What cause did you use?** Delete vs. Modify Conflict
 
@@ -95,7 +95,7 @@
 
 ---
 
-### Conflict 3 — Different Cause
+### Conflict 3: Different Cause
 
 **What cause did you use?** Rename / Path Relocation Collision (Add/Add Conflict)
 
