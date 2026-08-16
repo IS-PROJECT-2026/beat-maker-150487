@@ -25,4 +25,4 @@ body {
     border: 2px solid var(--neon-amber);
     box-shadow: 0 0 10px rgba(255, 170, 0, 0.5);
     background-color: var(--panel-bg);
-}
+}/* Cyberpunk glow utility */ .glow { filter: drop-shadow(0 0 8px #ff5e00); }
