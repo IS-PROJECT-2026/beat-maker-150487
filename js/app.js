@@ -2,6 +2,7 @@
 import { audioCtx, unlockAudio } from './audio/context.js';
 import { FXEngine } from './components/fx.js';
 import { SynthPresets } from './audio/synth.js';
+import { WaveformVisualizer } from './components/visualizer.js';
 
 let isPlaying = false;
 const defaultBpm = 140; 
@@ -12,6 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const tempoDisplay = document.getElementById('tempo-display');
     const fxEngine = new FXEngine(audioCtx);
     const synths = new SynthPresets(audioCtx, fxEngine.filter);
+
+    const canvas = document.getElementById('oscilloscope');
+    new WaveformVisualizer(audioCtx, fxEngine.filter, canvas);
 
     playBtn.addEventListener('click', () => {
         unlockAudio();
